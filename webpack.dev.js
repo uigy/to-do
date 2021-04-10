@@ -24,7 +24,20 @@ module.exports = merge(common, {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [
+          "style-loader",
+          "css-loader",
+          "sass-loader",
+          {
+            loader: "sass-resources-loader",
+            options: {
+              resources: [
+                "./src/assets/scss/variables.scss",
+                "./src/assets/scss/mixins.scss",
+              ],
+            },
+          },
+        ],
       },
       {
         test: /\.jsx?$/,
