@@ -1,0 +1,35 @@
+$breakpoints: (
+  xs: (
+    min-width: 360px,
+  ),
+  sm: (
+    min-width: 576px,
+  ),
+  md: (
+    min-width: 768px,
+  ),
+  lg: (
+    min-width: 992px,
+  ),
+  xl: (
+    min-width: 1200px,
+  ),
+  xxl: (
+    min-width: 1440px,
+  ),
+);
+
+$orientations: (
+  l: (
+    orientation: landscape,
+  ),
+  p: (
+    orientation: portrait,
+  ),
+);
+
+$color-bg: #090c10;
+$color-section-bg: #161b22;
+
+$radius: 20px;
+$gap: 20px;

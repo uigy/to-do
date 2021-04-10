@@ -1,0 +1,15 @@
+@mixin media($breakpoint, $orientation: null) {
+  $size: map-get($breakpoints, $breakpoint);
+  $viewport: map-get($orientations, $orientation);
+  @if ($size and $viewport) {
+    @media #{$size} and #{$viewport} {
+      @content;
+    }
+  } @else if ($size) {
+    @media #{$size} {
+      @content;
+    }
+  } @else {
+    @error 'Wrong breakpoint or orientation value';
+  }
+}
