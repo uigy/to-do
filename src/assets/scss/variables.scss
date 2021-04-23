@@ -28,8 +28,21 @@ $orientations: (
   ),
 );
 
-$color-bg: #090c10;
-$color-section-bg: #161b22;
+$color-text: lighten(#c9d1d9, 10%);
+$color-section-bg: rgba(0, 0, 0, 0.2);
+$color-item: darken($color-section-bg, 5%);
+$color-item-hover: lighten($color-section-bg, 25%);
+$color-item-active: darken($color-section-bg, 5%);
+$color-scrollbar: darken(#09203f, 20%);
 
-$radius: 20px;
+$border-radius: 20px;
+$transision: 0.3s;
+
+$sidebar-width: 400px;
 $gap: 20px;
+
+$user-panel-padding: 30px;
+$user-photo-width: 70px;
+$user-settings-width: 30px;
+
+$item-height: 50px;

@@ -1,0 +1,40 @@
+.add-task {
+  position: relative;
+  display: flex;
+  @include list-item;
+  border-radius: 10px;
+  background-color: $color-item;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+  margin-right: 16px;
+  margin: 20px 16px 20px 0;
+  transition: $transision;
+
+  .add-task-icon {
+    @include list-icon;
+    .add-icon {
+      width: 100%;
+    }
+  }
+
+  #add-task-input {
+    padding: 0 10px;
+    width: 100%;
+    background-color: transparent;
+    color: $color-text;
+    font-size: 1rem;
+    border: none;
+
+    &:focus {
+      outline: none;
+
+      &::placeholder {
+        color: darken($color-text, 20%);
+      }
+    }
+
+    &::placeholder {
+      color: $color-text;
+    }
+  }
+}

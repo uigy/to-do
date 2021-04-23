@@ -1,0 +1,68 @@
+.user-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $user-panel-padding;
+  width: 100%;
+  height: 100%;
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    flex-basis: calc(100% - #{$user-settings-width + 20px});
+    height: 100%;
+    overflow: hidden;
+
+    .user-photo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: $user-photo-width;
+      flex-shrink: 0;
+
+      .user-photo-img {
+        width: 100%;
+        box-shadow: 0 0 5px black;
+        border-radius: 50%;
+      }
+    }
+
+    .user-data {
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+
+      .user-name {
+        font-size: 1.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .user-email {
+        font-size: 0.8rem;
+        color: darken($color: $color-text, $amount: 20%);
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .user-settings {
+    width: $user-settings-width;
+    flex-shrink: 0;
+    background-color: transparent;
+    border: none;
+    color: $color-text;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    .settings-icon {
+      width: 100%;
+    }
+  }
+}

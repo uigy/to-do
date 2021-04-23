@@ -13,3 +13,79 @@
     @error 'Wrong breakpoint or orientation value';
   }
 }
+
+@mixin background {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+@mixin box {
+  background-color: $color-section-bg;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+@mixin list-item {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  flex-basis: $item-height;
+
+  &:hover {
+    background-color: $color-item-hover;
+  }
+}
+
+@mixin list-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  flex-shrink: 0;
+}
+
+@mixin button {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin list-in-box {
+  display: flex;
+  flex-direction: column;
+  padding: $border-radius 0;
+}
+
+@mixin scrollbar {
+  @supports (-moz-appearance: none) {
+    scrollbar-color: $color-scrollbar transparent;
+    scrollbar-width: thin;
+    margin-right: 4px;
+    padding-right: 4px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: $color-scrollbar;
+    border-right: 5px solid rgba(0, 0, 0, 0);
+    border-left: 5px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+  }
+}
+
+@mixin delay($number, $value) {
+  @for $i from 1 to ($number + 1) {
+    &:nth-of-type(#{$i}) {
+      animation-delay: (#{$i * $value});
+    }
+  }
+}

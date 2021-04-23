@@ -1,0 +1,12 @@
+.nav {
+  @include list-in-box;
+  height: 100%;
+
+  .lists {
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+    @include scrollbar;
+  }
+}

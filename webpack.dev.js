@@ -33,6 +33,7 @@ module.exports = merge(common, {
             options: {
               resources: [
                 "./src/assets/scss/variables.scss",
+                "./src/assets/scss/animations.scss",
                 "./src/assets/scss/mixins.scss",
               ],
             },

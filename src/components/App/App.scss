@@ -4,8 +4,16 @@
   padding: 0;
 }
 
+button,
+li {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
-  background-color: $color-bg;
+  @include background;
+  color: $color-text;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 #container {
@@ -13,45 +21,60 @@ body {
   padding: $gap;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 
   .sidebar {
+    position: absolute;
     display: flex;
+    top: 0;
+    left: 0;
+    padding: $gap;
     flex-direction: column;
     height: 100%;
     width: 100%;
+    opacity: 0;
+    transition: opacity 0.4s;
+
+    &--show {
+      opacity: 1;
+    }
 
     @include media(lg) {
-      width: 400px;
+      position: static;
+      display: flex;
+      width: $sidebar-width;
+      opacity: 1;
+      padding: 0;
     }
 
     .sidebar-header {
-      background-color: $color-section-bg;
-      border-radius: $radius;
+      @include box;
       flex-basis: 100px;
+      flex-shrink: 0;
     }
 
     .sidebar-content {
-      background-color: $color-section-bg;
-      border-radius: $radius;
+      @include box;
       margin-top: $gap;
       flex-grow: 1;
     }
   }
 
-  #main {
-    margin-left: $gap;
-    flex-grow: 1;
-    display: none;
+  .tasks-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    @include box;
+    transform: translateX(0);
+    transition: 0.4s;
 
-    @include media(lg) {
-      display: flex;
+    &--hide {
+      transform: translateX(-100vw);
     }
 
-    .tasks-container {
-      width: 100%;
-      height: 100%;
-      background-color: $color-section-bg;
-      border-radius: $radius;
+    @include media(lg) {
+      position: static;
+      margin-left: $gap;
     }
   }
 }

@@ -1,0 +1,43 @@
+.list-item {
+  @include list-item;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: $transision;
+
+  .list-item-icon {
+    @include list-icon;
+    .list-icon {
+      width: 67%;
+    }
+  }
+
+  &--active {
+    background-color: $color-item-active;
+    font-weight: 700;
+
+    &:hover {
+      background-color: $color-item-active;
+    }
+  }
+
+  .list-item-title {
+    margin: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .list-item-count {
+    margin-left: auto;
+  }
+
+  .list-delete {
+    margin-left: 15px;
+  }
+
+  .list-delete-button {
+    @include list-icon;
+    @include button;
+    color: $color-text;
+  }
+}

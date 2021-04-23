@@ -1,0 +1,208 @@
+{
+    "lists": [
+        {
+            "id": "e3a32e4f-4e08-4a24-8c5c-111de6a7a7bf",
+            "title": "Important",
+            "tasks": [
+                {
+                    "id": "54a74a83-0f87-4a4d-9856-c30002dda377",
+                    "text": "Watch Pluralsight course on Redux",
+                    "isComplete": false
+                },
+                {
+                    "id": "0c9ff7bc-8704-42c4-ab53-499a539d8331",
+                    "text": "Read Robert C. Martin - Clean Code",
+                    "isComplete": false
+                },
+                {
+                    "id": "44d1375b-7567-4347-a037-4acbbfe670ae",
+                    "text": "Learn more about CSS Grid",
+                    "isComplete": false
+                }
+            ]
+        },
+        {
+            "id": "ec10e33f-e511-4edd-9887-7c81df91ba5f",
+            "title": "Grocery",
+            "tasks": [
+                {
+                    "id": "dc5658eb-fd1e-4b03-afc3-c2674eb13015",
+                    "text": "Eggs",
+                    "isComplete": false
+                },
+                {
+                    "id": "08306b40-0a93-4953-b77e-ab8cd83f915b",
+                    "text": "Milk",
+                    "isComplete": true
+                },
+                {
+                    "id": "24aaddfd-ca7c-47bb-87da-202446221364",
+                    "text": "Cheese",
+                    "isComplete": false
+                },
+                {
+                    "id": "89b3a665-5ec1-48aa-a424-0117d0e3ff3d",
+                    "text": "Tuna",
+                    "isComplete": false
+                },
+                {
+                    "id": "b9763e45-f2b3-4a4f-b2a8-f67b26ea5ff7",
+                    "text": "Oregano",
+                    "isComplete": false
+                },
+                {
+                    "id": "a8dbdc05-0389-4229-964c-9a091370cac8",
+                    "text": "Basil",
+                    "isComplete": false
+                },
+                {
+                    "id": "52c914fd-27bb-4165-ad37-049b2f679fd4",
+                    "text": "Cucumber",
+                    "isComplete": false
+                },
+                {
+                    "id": "a5986303-6d3b-42a6-a7c1-48636725de23",
+                    "text": "Lettuce",
+                    "isComplete": false
+                },
+                {
+                    "id": "10cb2c15-371c-412e-ba5e-cfd1df33d822",
+                    "text": "Tomatoes",
+                    "isComplete": false
+                },
+                {
+                    "id": "a4ad0290-eb92-4302-acec-ade1fac61d3c",
+                    "text": "Avocado",
+                    "isComplete": true
+                },
+                {
+                    "id": "1b5073f8-f5d4-4335-a6d5-26dfafeaba09",
+                    "text": "Oranges",
+                    "isComplete": true
+                },
+                {
+                    "id": "9a693c34-ae6f-40a8-a5ed-dabb6bd57a9f",
+                    "text": "Apples",
+                    "isComplete": true
+                },
+                {
+                    "id": "5cd0730b-175a-4c80-9938-6ba724c35973",
+                    "text": "Peaches",
+                    "isComplete": true
+                },
+                {
+                    "id": "f0f741bc-ebf5-4d36-86f9-526fbe41715d",
+                    "text": "Bananas",
+                    "isComplete": true
+                },
+                {
+                    "id": "49aefe24-592e-47dc-8793-565953287237",
+                    "text": "Honey",
+                    "isComplete": true
+                }
+            ]
+        },
+        {
+            "id": "dd31f869-e8db-4d06-a655-88886c0282dd",
+            "title": "Shopping",
+            "tasks": [
+                {
+                    "id": "7847677c-9ad7-4b4f-b711-214872044042",
+                    "text": "Coffee machine",
+                    "isComplete": false
+                },
+                {
+                    "id": "3ae7a051-182b-4467-9dac-bd2e84307b0e",
+                    "text": "Jacket",
+                    "isComplete": false
+                },
+                {
+                    "id": "66ca2e86-b0b4-4052-a7c1-b436016ef18f",
+                    "text": "Binoculars",
+                    "isComplete": false
+                },
+                {
+                    "id": "6d2f7105-537c-40d2-8b9a-22cf3b10a0ba",
+                    "text": "Socks",
+                    "isComplete": true
+                }
+            ]
+        },
+        {
+            "id": "5970c04d-2396-438f-b8f3-ea6414a9eff5",
+            "title": "Mountain trip",
+            "tasks": [
+                {
+                    "id": "c9174ccf-d8db-43cb-8ee6-c069496f2c80",
+                    "text": "Ropes",
+                    "isComplete": false
+                },
+                {
+                    "id": "206c7f96-cc32-4ec8-8b2c-38937c85468f",
+                    "text": "Helmet",
+                    "isComplete": false
+                },
+                {
+                    "id": "2d1525d6-b34b-4d44-af27-98c881dc8b66",
+                    "text": "First aid kit",
+                    "isComplete": false
+                },
+                {
+                    "id": "d69cfcc1-c7ae-4531-b6e5-6c1e7979953a",
+                    "text": "Loops",
+                    "isComplete": false
+                },
+                {
+                    "id": "7651113d-fb26-4f22-8984-3638b7aa6309",
+                    "text": "Cams",
+                    "isComplete": false
+                },
+                {
+                    "id": "6bef196d-856a-4e72-9d74-d6e25f20c6bf",
+                    "text": "Nuts",
+                    "isComplete": false
+                },
+                {
+                    "id": "a638c130-20ec-4ddd-a3d2-38d744d53c4f",
+                    "text": "Quickdraws",
+                    "isComplete": false
+                },
+                {
+                    "id": "d018b35c-8d09-4af0-ab15-e19b0b40b83b",
+                    "text": "Carabiners",
+                    "isComplete": false
+                },
+                {
+                    "id": "73e04622-6fd2-482c-ab0f-2e379b929fcc",
+                    "text": "Reverso",
+                    "isComplete": false
+                },
+                {
+                    "id": "5e44b1dc-edbe-46c5-bcf3-c6302e0b5cf8",
+                    "text": "Cords",
+                    "isComplete": false
+                },
+                {
+                    "id": "d230c515-f4f9-4f0c-a94a-4342ec4fa9be",
+                    "text": "Harness",
+                    "isComplete": false
+                },
+                {
+                    "id": "8c3c86f5-34d7-4933-82f0-c330ded42734",
+                    "text": "Chalkbag",
+                    "isComplete": false
+                },
+                {
+                    "id": "0c3c9d98-ca76-4c05-80fa-8d7666a8ec72",
+                    "text": "Sunscreen",
+                    "isComplete": false
+                },
+                {
+                    "id": "315b4b50-ea8a-41ea-a2ea-42dd98ac7a7a",
+                    "text": "Sunglasses",
+                    "isComplete": false
+                }
+            ]
+        }
+    ]
+}
